@@ -3,14 +3,16 @@
     "default_params": {
       "instance_file": "instances/A-n32-k5_1.txt"
     },
-    "problem_type": "Prize-Collecting Vehicle Routing Problem",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Prize-collecting vehicle routing problem",
     "description": "In the Prize-Collecting Vehicle Routing Problem (PCVRP), a fleet of vehicles with uniform capacity must serve customers with known demand and prize values. The vehicles start and end at a common depot. Each customer is served by at most one vehicle. The total delivered demand must reach or exceed a predetermined amount. The objectives, in lexicographic order, are to minimize the number of trucks used, maximize the total prize collected, and minimize the total distance traveled. This model computes route quantities, route distances (using provided distance matrices for customer-to-customer and depot-to-customer distances), and route prizes. A candidate solution is given as a set of routes (one per truck) that form a partition of the customer set.",
+    "link_to_dataset": "https://github.com/Rastion/prize_collecting_vrp/blob/main/instances/A-n32-k5_1.txt",
     "keywords": [
       "vehicle routing",
       "prize collecting",
       "PCVRP",
-      "optimization",
-      "routing"
+      "route-optimization"
     ],
     "data_format": {
       "instance_file": {
@@ -29,11 +31,8 @@
       "description": "The objective is to minimize the number of trucks used, maximize the total prize collected (by subtracting a weighted prize term), and minimize the total distance traveled by all trucks. All constraints regarding vehicle capacity and minimum total demand are enforced."
     },
     "solution_representation": "A dictionary with key 'routes' mapping to a list of routes (one per truck).",
-    "compatible_optimizers": [
-      "genetic_algorithm",
-      "simulated_annealing",
-      "particle_swarm",
-      "tabu_search"
+    "formulations": [
+      ""
     ]
   }
   
